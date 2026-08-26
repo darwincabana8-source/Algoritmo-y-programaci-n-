@@ -1,0 +1,15 @@
+Algoritmo Tiposdeinstruciones
+	Definir A, B, RESULTADO Como Entero
+	
+	
+	leer A
+	
+	B = 10
+	resultado = A+B
+	Si resultado > 15 entonces 
+		
+		escribir "El numero sepera el limite:"
+	
+	FinSi
+	
+FinAlgoritmo
