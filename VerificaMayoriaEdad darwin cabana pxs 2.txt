@@ -1,0 +1,12 @@
+Algoritmo VerificaMayoriaEdad
+	Definir edad como Entero
+	
+	Escribir "por favor, ingrese su edad:";
+	Leer edad;
+	
+	si edad >= 18 Entonces
+		Escribir "Aceso concebido: usted es mayor de edad.";
+	FinSi
+	
+	Escribir "Gracias por utilizar el sistema.";
+FinAlgoritmo

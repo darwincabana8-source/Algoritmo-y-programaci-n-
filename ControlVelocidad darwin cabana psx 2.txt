@@ -1,0 +1,13 @@
+Algoritmo ControlVelocidad
+	Definir velicidad Como Real ;
+	
+	Escribir "!Imgrese la velocidad registrada del veiculo (km/h.";
+	Leer velocidad;
+	
+	si velocidad > 80 Entonces
+		Escribir "¡ALERTA! ha superado el limite de velocidad de 80 km/h.";
+		Escribir "se ha generado una fotomulta automatica.";
+	FinSi 
+	Escribir "Evaluacion de trancito finalizada.";
+	
+FinAlgoritmo
