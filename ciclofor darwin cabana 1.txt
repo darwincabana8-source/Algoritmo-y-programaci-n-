@@ -1,0 +1,6 @@
+﻿Compilación iniciada a las 11:13...
+1>------ Operación Compilar iniciada: Proyecto: programacion, configuración: Debug Any CPU ------
+1>C:\Users\sala-3.UNICARIBE\Desktop\ADRIAN PROYECTOS\darwin\programacion\Program.cs(3,26,3,26): error CS1513: Se esperaba }
+1>C:\Users\sala-3.UNICARIBE\Desktop\ADRIAN PROYECTOS\darwin\programacion\Program.cs(15,2,15,2): error CS1513: Se esperaba }
+========== Compilación: 0 correcto, 1 erróneo, 0 actualizado, 0 omitido ==========
+========== Compilar completado a las 11:13 y tardó 00.113 segundos ==========

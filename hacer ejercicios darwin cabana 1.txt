@@ -1,0 +1,5 @@
+﻿Compilación iniciada a las 11:53...
+1>------ Operación Compilar iniciada: Proyecto: algo, configuración: Debug Any CPU ------
+1>  algo -> C:\Users\sala-3.UNICARIBE\Desktop\ADRIAN PROYECTOS\darwin\algo\bin\Debug\algo.exe
+========== Compilación: 1 correcto, 0 erróneo, 0 actualizado, 0 omitido ==========
+========== Compilar completado a las 11:53 y tardó 00.313 segundos ==========
