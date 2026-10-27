@@ -1,0 +1,79 @@
+﻿
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int opcion;
+
+        do
+        {
+            Console.WriteLine("\n--- MENÚ ---");
+            Console.WriteLine("1. Cuadrado hueco");
+            Console.WriteLine("2. Triángulo invertido");
+            Console.WriteLine("3. Pirámide centrada");
+            Console.WriteLine("4. Salir");
+            Console.Write("Elige una opción: ");
+
+            opcion = int.Parse(Console.ReadLine());
+
+            switch (opcion)
+            {
+                case 1:
+                    
+                    for (int i = 0; i < 5; i++)
+                    {
+                        for (int j = 0; j < 5; j++)
+                        {
+                            if (i == 0 || i == 4 || j == 0 || j == 4)
+                                Console.Write("*");
+                            else
+                                Console.Write(" ");
+                        }
+                        Console.WriteLine();
+                    }
+                    break;
+
+                case 2:
+                    
+                    for (int i = 0; i < 5; i++)
+                    {
+                        for (int j = 0; j < 5 - i; j++)
+                        {
+                            Console.Write("*");
+                        }
+                        Console.WriteLine();
+                    }
+                    break;
+
+                case 3:
+                    
+                    for (int i = 0; i < 5; i++)
+                    {
+                        for (int j = 0; j < 4 - i; j++)
+                        {
+                            Console.Write(" ");
+                        }
+
+                        for (int k = 0; k < 2 * i + 1; k++)
+                        {
+                            Console.Write("*");
+                        }
+
+                        Console.WriteLine();
+                    }
+                    break;
+
+                case 4:
+                    Console.WriteLine("¡Hasta luego!");
+                    break;
+
+                default:
+                    Console.WriteLine("Opción no válida.");
+                    break;
+            }
+
+        } while (opcion != 4);
+    }
+}
