@@ -1,0 +1,59 @@
+﻿
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        
+        string usuarioCorrecto = "dacabana";
+        string contrasenaCorrecta = "da1234";
+
+        string usuario, contrasena;
+        int intentos = 0;
+        bool conexion = false;
+
+        do
+        {
+            Console.Write("Ingrese el usuario: ");
+            usuario = Console.ReadLine();
+
+            Console.Write("Ingrese la contraseña: ");
+            contrasena = Console.ReadLine();
+
+            
+            if (usuario == "admin")
+            {
+                Console.WriteLine("Servidor no disponible. Reintente más tarde.");
+            }
+            else
+            {
+                
+                if (usuario == usuarioCorrecto &&
+                    contrasena == contrasenaCorrecta)
+                {
+                    Console.WriteLine("Conexión establecida con la base de datos.");
+                    conexion = true;
+                }
+                else
+                {
+                    intentos++;
+
+                    Console.WriteLine("Error de autenticación. Intento "
+                        + intentos + " de 3.");
+                }
+            }
+
+        } while (conexion == false && intentos < 3);
+
+        
+        if (conexion == false)
+        {
+            Console.WriteLine("Conexión bloqueada por seguridad.");
+            Console.WriteLine("Comuníquese con el administrador del sistema.");
+        }
+
+        Console.ReadKey();
+    }
+}
